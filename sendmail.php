@@ -6,7 +6,7 @@
     require 'phpmailer/src/PPHPMailer.php';
     
     $mail = new PHPMailer(true);
-    $mail -> Charset = 'UTF-8';
+    $mail->CharSet = 'UTF-8';
     $mail->setLanguage('ru','phpmailer/language/');
     $mail->IsHTML(true);
 
@@ -44,7 +44,7 @@
 
     //Отправляем
     if (!$mail->send()){
-        $message = 'Ошибка';
+        $message = 'Ошибка!!!!';
     }else{
         $message = 'Данные отправлены!';
     }

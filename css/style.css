@@ -563,6 +563,7 @@ body{font-size: 14px;}
   color: #3C3C3B;
   font-family: 'Century Gothic';
 }
+.form-textarea._error,
 .form-input._error{
   box-shadow: 0 0 15px red;
 }
