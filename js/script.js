@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $("a[href^='#']").on("click", function () {
         let href = $(this).attr("href");
     
@@ -12,7 +12,7 @@ $(document).ready(function(){
         return false;
     });
     
-        
+       
     $('.kitchenCatalog__item,.bathCatalog__item,.windowCatalog__item,.otherCatalog__item').click(function(e){
         if ($(window).width()>479){
         $(e.currentTarget).addClass('big');
@@ -54,6 +54,22 @@ $(document).ready(function(){
         
      }
         setInterval(loop,2500);
-    
+
 
 });
+*/
+"use strict"
+document.addEventListener('DOMContentLoaded',function(){
+    const form = document.getElementById('form');
+    form.addEventListener('submit',formSend);
+    async function formSend(e){
+        e.preventDefault();
+    let error = formValidate(form);
+
+    }
+
+    function formValidate(e){
+        let error = 0;
+        let formReq=document.querySelectorAll('._req');
+    }
+})

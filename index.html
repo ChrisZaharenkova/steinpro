@@ -154,15 +154,20 @@
                     </div>
                     <div class="footer__item form-item" id="apply">
                         <h2 class="item-footer__title">Оставить заявку</h2>
-                        <form action="index.html" method="POST" class="item-footer__form">
+                        <form action="submit.php" method="POST" id="form" class="item-footer__form">
                             <label for="name">Имя</label>
                             <input class="form-input" type="text" id="name" name="Name" placeholder="Кристина">
                             <label for="tel">Номер телефона</label>
                             <input class="form-input" type="tel" id="tel" name="Phone" placeholder="8996959****">
                             <label for="mail">Почта</label>
                             <input class="form-input" type="email" id="mail" name="Mail" placeholder="example@mail.ru">
-                            <label for="about">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
-                            <textarea class="form-textarea" name="Размеры" id="about" cols="10" rows="10"></textarea>
+                            <label for="info">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
+                            <textarea class="form-textarea" name="Info" id="info" cols="10" rows="10"></textarea>
+                            <div class="checkbox">
+                                <input type="checkbox" id="formAgreement" name="agreement">
+                                <label for="formAgreement" class="checkbox-label">Я даю свое согласие на обработку персональных данных в соответствиями <a href="">условиями</a></label>
+                            </div>
+                            
                             <div class="form-buttons">
                                 <input class="form-file" type="file" multiple name="Files" accept="image/*">
                                 <button type="submit" class="form-button">отправить</button>
