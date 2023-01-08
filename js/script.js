@@ -60,5 +60,24 @@ $(document).ready(function(){
         formImage.addEventListener('change',()=>{
             uploadFile(formImage.files[0]);
         });
+        function uploadFile(file){
+            if(!['image/jpeg','image/png'].includes(file.type)){
+                alert('Разрешены только изображения');
+                formImage.value="";
+                return;
+            }
+            if(file.size>2*1024*1024){
+                alert('Файл должен быть менее 2МБ.')
+                return;
+            }
+           let reader = new FileReader();
+            reader.onload = function(e){
+                formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`
+            };
+            reader.onerror = function(e){
+                alert('Ошибка');
+            };
+            reader.readAsDataURL(file);
+        }
 
 });
