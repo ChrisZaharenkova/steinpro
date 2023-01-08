@@ -162,11 +162,20 @@
                             <label for="mail">Почта</label>
                             <input class="form-input" type="email" id="mail" name="Mail" placeholder="example@mail.ru">
                             <label for="about">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
-                            <textarea class="form-textarea" name="Размеры" id="about" cols="10" rows="10"></textarea>
-                            <div class="form-buttons">
-                                <input class="form-file" type="file" multiple name="Files" accept="image/*">
-                                <button type="submit" class="form-button">отправить</button>
+                            <textarea class="form-textarea " name="Info" id="info" cols="10" rows="5"></textarea>
+                            <div class="file-block">
+                                    <div class="file__item">
+                                        <input class="form-file" id="formImage" type="file" multiple name="image" accept="image/*">
+                                        <div class="file__button">выбрать файл</div>
+                                    </div>
+                                    
+                                    <div id="formPreview" class="formPreview"></div>
                             </div>
+                            <div class="checkbox">
+                                    <input type="checkbox" class="checkbox-input " id="formAgreement"   name="agreement">
+                                    <label for="formAgreement" class="checkbox-label">Я даю свое согласие на    обработку персональных данных в соответствиями <a href="">условиями</a></label>
+                            </div>
+                            <button type="submit" class="form-button">отправить</button>
                         </form>
                     </div>
                 </div>
