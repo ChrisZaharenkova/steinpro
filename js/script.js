@@ -39,7 +39,7 @@ $(document).ready(function(){
         }
       });
      function loop(){
-        console.log('hello')
+      
        let currentSlide = $('.item-what__image.current'),
              currentSlideIndex = currentSlide.index(),
              nextSlide = currentSlide.next(),
