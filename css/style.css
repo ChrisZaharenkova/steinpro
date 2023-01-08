@@ -786,6 +786,7 @@ body{font-size: 14px;}
 .otherTextblock__item:not(:last-child){
   margin-bottom: 10px;
 }
+
 .kitchen-slider,
 .window-slider{
   padding:0 0 80px 0;
