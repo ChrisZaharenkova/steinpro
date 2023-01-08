@@ -1,4 +1,5 @@
 <?php
+/*
 // Обязательно измените e-mail на свой
 $sendto = "kristina.zaharenkova00@mail.ru";
 $usermail = $_POST['email'];
@@ -25,4 +26,6 @@ if(@mail($sendto, $subject, $msg, $headers)) {
 } else {
 	echo "false";
 }
+
+*/
 ?>
