@@ -762,8 +762,7 @@ body{font-size: 14px;}
   padding: 20px;
   text-align: center;
 }
-.windowCatalog {
-}
+
 .windowCatalog__container {
 }
 .windowCatalog__row {
@@ -787,7 +786,27 @@ body{font-size: 14px;}
 .otherTextblock__item:not(:last-child){
   margin-bottom: 10px;
 }
+.kitchen-slider,
+.window-slider{
+  padding:0 0 80px 0;
+}
+.kitchenCatalog,
+.windowCatalog {
+  display: none;
+}
+.kitchen-slider__container,
+.window-slider__container{
 
+  display: flex;
+  justify-content: center;
+  
+}
+@media(max-width:479px){
+  .kitchen-slider,
+  .window-slider{
+  padding:0 0 50px 0;
+}
+}
 
 
 
