@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("a[href^='#']").on("click", function () {
+    /*$("a[href^='#']").on("click", function () {
         let href = $(this).attr("href");
     
         $("html, body").animate({
@@ -54,6 +54,11 @@ $(document).ready(function(){
         
      }
         setInterval(loop,2500);
-    
+        */
+        const formImage = document.getElementById('formImage');
+        const formPreview = document.getElementById('formPreview');
+        formImage.addEventListener('change',()=>{
+            uploadFile(formImage.files[0]);
+        });
 
 });
