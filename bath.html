@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link href="fotorama.css" rel="stylesheet">
-    <script src="fotorama.js"></script>
+    <script defer src="libs/inputmask.min.js"></script>
+    <script defer src="libs/just-validate.min.js"></script>
+    <script defer src="js/script.js"></script>
+  <!-- Fotorama -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link href="fotorama.css" rel="stylesheet">
+  <script defer src="fotorama.js"></script>
     <title>Умывальники</title>
 </head>
 <body >
@@ -186,27 +190,37 @@
                         </div>
                         <div class="item-footer__cooperation"><p>По вопросам сотрудничества обращаться по номеру <a href="tel:+79114732369">+7(911)473-23-69</a> или напишите нам на почту steinpro39@mail.ru</p></div>
                     </div>
-                    <div class="footer__item form-item">
+                    <div class="footer__item form-item" id="apply">
                         <h2 class="item-footer__title">Оставить заявку</h2>
-                        <form action="index.html" method="POST" class="item-footer__form">
+                        <form name="test" action="#" method="POST" class="form" enctype="multipart/form-data">
                             <label for="name">Имя</label>
-                            <input class="form-input" type="text" id="name" name="Name" placeholder="Кристина">
+                            <input class="input form-input" type="text" data-validate-field="name" id="name" name="Name" placeholder="Кристина">
                             <label for="tel">Номер телефона</label>
-                            <input class="form-input" type="tel" id="tel" name="Phone" placeholder="8996959****">
+                            <input class="input form-input" type="tel" data-validate-field="tel" id="tel" name="Phone" placeholder="8996959****">
                             <label for="mail">Почта</label>
-                            <input class="form-input" type="email" id="mail" name="Mail" placeholder="example@mail.ru">
+                            <input class="input form-input" type="email" data-validate-field="email" id="mail" name="Mail" placeholder="example@mail.ru">
                             <label for="about">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
-                            <textarea class="form-textarea" name="Размеры" id="about" cols="10" rows="10"></textarea>
-                            <div class="form-buttons">
-                                <input class="form-file" type="file" multiple name="Files" accept="image/*">
-                                <button type="submit" class="form-button">отправить</button>
+                            <textarea class="form-textarea " name="Info" id="info" cols="10" rows="5"></textarea>
+                            <div class="file-block">
+                                    <div class="file__item">
+                                        <input class="input form-file" id="formFile" type="file" multiple name="file[]" accept="image/*">
+                                        <div class="file__button">выбрать файл</div>
+                                    </div>
+                                    
+                                    <div id="formPreview" class="formPreview"></div>
                             </div>
+                            <!--
+                            <div class="checkbox">
+                                    <input type="checkbox" class="checkbox-input " id="formAgreement"   name="agreement">
+                                    <label for="formAgreement" class="checkbox-label">Я даю свое согласие на    обработку персональных данных в соответствиями <a href="">условиями</a></label>
+                            </div>-->
+                            <button type="submit" class="form-button">отправить</button>
                         </form>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+
 </body>
 </html>

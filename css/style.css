@@ -528,7 +528,7 @@ body{font-size: 14px;}
   padding: 0 0 20px 0;
 
 }
-.item-footer__form {
+.form {
   display: flex;
   flex-direction: column;
   text-align: end;
