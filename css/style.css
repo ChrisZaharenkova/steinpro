@@ -1,5 +1,5 @@
 
-@font-face {
+/*@font-face {
     font-family: 'Century Gothic';
     src: url('../fonts/centurygothic-webfont.woff2') format('woff2'),
          url('../fonts/centurygothic-webfont.woff') format('woff'),
@@ -7,7 +7,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 *,
 *::before,
@@ -44,7 +44,8 @@ body {
   margin: 0;
   height: 100%;
   line-height: normal;
-  font-family: 'Century Gothic';
+  /*font-family: 'Century Gothic';*/
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   color: #4E4D4D;
   font-size: 16px;
@@ -541,13 +542,15 @@ body{font-size: 14px;}
   background-color: #9D9D9C;
   border-radius: 15px;
   color: #3C3C3B;
-  font-family: 'Century Gothic';
+  /*font-family: 'Century Gothic';*/
+  font-family: 'Montserrat', sans-serif;
 }
 .form-textarea {
   background-color: #9D9D9C;
   border-radius: 15px;
   color: #3C3C3B;
-  font-family: 'Century Gothic';
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Century Gothic';*/
   padding: 10px;
 }
 .file-block{
