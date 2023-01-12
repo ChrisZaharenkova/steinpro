@@ -533,11 +533,16 @@ body{font-size: 14px;}
   display: flex;
   flex-direction: column;
   text-align: end;
-  gap: 10px;
+  gap: 20px;
+
   
 }
+.label-input{
+  display: flex;
+  flex-direction: column-reverse;
+}
 .form-input {
- 
+  width: 100%;
   padding: 10px;
   background-color: #9D9D9C;
   border-radius: 15px;
@@ -553,6 +558,9 @@ body{font-size: 14px;}
   /*font-family: 'Century Gothic';*/
   padding: 10px;
 }
+.form-file{
+}
+/*
 .file-block{
   display: flex;
   flex-direction: column;
@@ -593,7 +601,7 @@ body{font-size: 14px;}
   width: 70px;
   height: 70px;
   object-fit: cover;
-}
+}*/
 .form-button {
   background-color:#EDEDED ;
   color: #5d5d5d; ;

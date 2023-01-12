@@ -55,7 +55,7 @@
      }
         setInterval(loop,2500);
        
-       */
+      
         const formImage = document.getElementById('formFile');
         const formPreview = document.getElementById('formPreview');
         formImage.addEventListener('change',()=>{
@@ -82,7 +82,7 @@
             
         } 
         console.log('Init!');
-
+ */
 // inputmask
 const form = document.querySelector('.form');
 const telSelector = form.querySelector('input[type="tel"]');
@@ -103,8 +103,7 @@ new window.JustValidate('.form', {
   messages: {
     name: {
       required: 'Введите имя',
-      minLength: 'Введите 3 и более символов',
-      maxLength: 'Запрещено вводить более 15 символов'
+      
     },
     email: {
       email: 'Введите корректный email',
@@ -112,7 +111,7 @@ new window.JustValidate('.form', {
     },
     tel: {
       required: 'Введите телефон',
-      function: 'Здесь должно быть 10 символов без +7'
+     
     }
   },
   submitHandler: function(thisForm) {

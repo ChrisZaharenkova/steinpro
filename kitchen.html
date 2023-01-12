@@ -196,23 +196,23 @@
                     <div class="footer__item form-item" id="apply">
                         <h2 class="item-footer__title">Оставить заявку</h2>
                         <form name="test" action="#" method="POST" class="form" enctype="multipart/form-data">
-                            <label for="name">Имя</label>
-                            <input class="input form-input" type="text" data-validate-field="name" id="name" name="Name" placeholder="Кристина">
-                            <label for="tel">Номер телефона</label>
-                            <input class="input form-input" type="tel" data-validate-field="tel" id="tel" name="Phone" placeholder="8996959****">
-                            <label for="mail">Почта</label>
-                            <input class="input form-input" type="email" data-validate-field="email" id="mail" name="Mail" placeholder="example@mail.ru">
+                            <label class="label-input" for="name">
+                            <input class="input form-input" type="text" data-validate-field="name" id="name" name="Name" placeholder="Кристина"></label>
+                            <label class="label-input" for="tel">
+                            <input class="input form-input" type="tel" data-validate-field="tel" id="tel" name="Phone" placeholder="8996959****"></label>
+                            <label class="label-input" for="mail">
+                            <input class="input form-input" type="email" data-validate-field="email" id="mail" name="Mail" placeholder="example@mail.ru"></label>
                             <label for="about">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
                             <textarea class="form-textarea " name="Info" id="info" cols="10" rows="5"></textarea>
-                            <div class="file-block">
+                            <input class="input form-file" id="formFile" type="file" multiple name="file[]" accept="image/*">
+                            <!--<div class="file-block">
                                     <div class="file__item">
-                                        <input class="input form-file" id="formFile" type="file" multiple name="file[]" accept="image/*">
+                                        
                                         <div class="file__button">выбрать файл</div>
                                     </div>
                                     
                                     <div id="formPreview" class="formPreview"></div>
                             </div>
-                            <!--
                             <div class="checkbox">
                                     <input type="checkbox" class="checkbox-input " id="formAgreement"   name="agreement">
                                     <label for="formAgreement" class="checkbox-label">Я даю свое согласие на    обработку персональных данных в соответствиями <a href="">условиями</a></label>
