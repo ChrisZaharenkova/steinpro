@@ -61,6 +61,8 @@ new window.JustValidate('.form', {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           console.log('Отправлено');
+          const apply = document.querySelector('.apply');
+          apply.classList.add('open'); 
         }
       }
     }
@@ -71,6 +73,15 @@ new window.JustValidate('.form', {
     thisForm.reset();
   }
 });
+const apply = document.querySelector('.apply');
+const button = document.querySelector('.apply__icon');
+
+button.addEventListener('click',function(){
+   apply.classList.add('close');
+});
+ 
+
+
     
 
 
