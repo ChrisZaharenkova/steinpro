@@ -1,24 +1,45 @@
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
 
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
 // inputmask
 const form = document.querySelector('.form');
 const telSelector = form.querySelector('input[type="tel"]');
 const inputMask = new Inputmask('+7 (999) 999-99-99');
 inputMask.mask(telSelector);
 
+
 new window.JustValidate('.form', {
   rules: {
+    email:{
+      required: false,   
+    },
+    name:{
+      required:false,
+    },
     tel: {
-      required: true,
+      required: false,
+      /*
       function: () => {
         const phone = telSelector.inputmask.unmaskedvalue();
         return Number(phone) && phone.length === 10;
-      }
+      }*/
     }
   },
   colorWrong: '#ff0f0f',
   messages: {
     name: {
       required: 'Введите имя',
+      minLength: 'Введите 3 и более символов',
+      maxLength: 'Запрещено вводить более 15 символов'
       
     },
     email: {
@@ -30,6 +51,7 @@ new window.JustValidate('.form', {
      
     }
   },
+  
   submitHandler: function(thisForm) {
     let formData = new FormData(thisForm);
 
@@ -48,7 +70,7 @@ new window.JustValidate('.form', {
 
     thisForm.reset();
   }
-})
-        
+});
+    
 
 

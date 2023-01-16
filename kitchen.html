@@ -196,27 +196,15 @@
                     <div class="footer__item form-item" id="apply">
                         <h2 class="item-footer__title">Оставить заявку</h2>
                         <form name="test" action="#" method="POST" class="form" enctype="multipart/form-data">
-                            <label class="label-input" for="name">
-                            <input class="input form-input" type="text" data-validate-field="name" id="name" name="Имя" placeholder="Кристина"></label>
-                            <label class="label-input" for="tel">
-                            <input class="input form-input" type="tel" data-validate-field="tel" id="tel" name="Телефон" placeholder="8996959****"></label>
-                            <label class="label-input" for="mail">
-                            <input class="input form-input" type="email" data-validate-field="email" id="mail" name="Почта" placeholder="example@mail.ru"></label>
-                            <label for="about">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
-                            <textarea class="form-textarea " name="Информация" id="info" cols="10" rows="5"></textarea>
-                            <input class="input form-file" id="formFile" type="file" multiple name="file[]" accept="image/*">
-                            <!--<div class="file-block">
-                                    <div class="file__item">
-                                        
-                                        <div class="file__button">выбрать файл</div>
-                                    </div>
-                                    
-                                    <div id="formPreview" class="formPreview"></div>
-                            </div>
-                            <div class="checkbox">
-                                    <input type="checkbox" class="checkbox-input " id="formAgreement"   name="agreement">
-                                    <label for="formAgreement" class="checkbox-label">Я даю свое согласие на    обработку персональных данных в соответствиями <a href="">условиями</a></label>
-                            </div>-->
+                            <label class="label" for="name">Имя</label>
+                            <input class=" form-input form-item" type="text" data-validate-field="name" id="name" name="Имя" placeholder="Евгений" autocomplete="on">
+                            <label class="label" for="tel">Телефон</label>
+                            <input class=" form-input form-item" type="tel" data-validate-field="tel" id="tel" name="Телефон" autocomplete="on" placeholder="+7 (999) 999-99-99">
+                            <label class="label" for="mail">Почта</label>
+                            <input class=" form-input form-item" type="email" data-validate-field="email" id="mail" autocomplete = "on" name="Почта" placeholder="example@mail.ru">
+                            <label class="label" for="info">Напишите ваши пожелания, размеры или прикрепите файл проекта</label>
+                            <textarea class="form-textarea form-item" name="Информация" id="info" cols="10" rows="5"></textarea>
+                            <input class="form-item form-file" id="formFile" type="file" multiple name="file[]" accept="image/*">   
                             <button type="submit" class="form-button">отправить</button>
                         </form>
                     </div>
